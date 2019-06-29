@@ -9,12 +9,11 @@ namespace RetailCalculator.Core.ConsoleApp
         static void Main(string[] args)
         {
             var calculator = ServiceLocator.RetailCalculatorService;
+            var inputManager = new InputManager();
             Console.WriteLine("Welcome to retail calculator");
 
             var purchase = new PurchaseEntity();
-            Console.WriteLine("Insert item price");
-            purchase.Price = float.Parse(Console.ReadLine());
-            Console.WriteLine($"Item price {purchase.Price}");
+            purchase.Price = inputManager.GetPrice();
 
             Console.WriteLine("Insert item count");
             purchase.Count = int.Parse(Console.ReadLine());
