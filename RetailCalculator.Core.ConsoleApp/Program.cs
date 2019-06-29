@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace RetailCalculator.Core.ConsoleApp
 {
@@ -17,6 +18,9 @@ namespace RetailCalculator.Core.ConsoleApp
             calculator.Count = int.Parse(Console.ReadLine());
             Console.WriteLine($"Item count {calculator.Count}");
 
+
+            var state = calculator.StateTax.Keys.First();
+            Console.WriteLine($"Taxes for state {state}");
             Console.WriteLine($"Tax is {calculator.BeatyfyTax(calculator.Tax)}");
             Console.WriteLine($"Total: {calculator.CalculcateTotal()}");
             Console.ReadLine();
