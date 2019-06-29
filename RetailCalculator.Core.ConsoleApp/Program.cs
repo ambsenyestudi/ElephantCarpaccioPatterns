@@ -19,7 +19,7 @@ namespace RetailCalculator.Core.ConsoleApp
             Console.WriteLine($"Item count {calculator.Count}");
 
 
-            var state = calculator.StateTax.Keys.First();
+            var state = Console.ReadLine();
             Console.WriteLine($"Taxes for state {state}");
             Console.WriteLine($"Tax is {calculator.BeatyfyTax(calculator.Tax)}");
             Console.WriteLine($"Total: {calculator.CalculcateTotal()}");
