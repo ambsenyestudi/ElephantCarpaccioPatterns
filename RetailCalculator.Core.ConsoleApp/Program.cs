@@ -14,10 +14,7 @@ namespace RetailCalculator.Core.ConsoleApp
 
             var purchase = new PurchaseEntity();
             purchase.Price = inputManager.GetPrice();
-
-            Console.WriteLine("Insert item count");
-            purchase.Count = int.Parse(Console.ReadLine());
-            Console.WriteLine($"Item count {purchase.Count}");
+            purchase.Count = (int)inputManager.GetItemCount();
 
 
             Console.WriteLine("Insert state");
