@@ -19,6 +19,12 @@ namespace RetailCalculator.Core.ConsoleApp.Application
             var partial = Calculator.CalculcateTotal(purchase);
             return TaxCalculationService.CalculateTaxes(partial, state);
         }
+        public float CalculateTotal(PurchaseEntity purchase, string state, float discount)
+        {
+            var partial = Calculator.CalculcateTotal(purchase);
+            partial = TaxCalculationService.CalculateTaxes(partial, state);
+            return Calculator.ApplyDiscount(partial, discount);
+        }
 
         public float GetTaxCharge(string state) => TaxCalculationService.Taxes[state];
     }

@@ -25,6 +25,9 @@ namespace RetailCalculator.Core.ConsoleApp
             var state = Console.ReadLine();
             Console.WriteLine($"Taxes for state {state} are {calculator.GetTaxCharge(state).ToTaxPercentage()}");
             Console.WriteLine($"Total: {calculator.CalculateTotal(purchase, state)}");
+            var discount = 0.03f;
+            Console.WriteLine($"Applying a dicount of {discount.ToTaxPercentage()}");
+            Console.WriteLine($"Total: {calculator.CalculateTotal(purchase, state, discount)}");
             Console.ReadLine();
         }
     }

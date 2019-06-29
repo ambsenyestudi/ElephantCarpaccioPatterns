@@ -21,5 +21,13 @@ namespace RetailCalculator.Core.ConsoleApp.Test.Calculation
             };
             Assert.Equal(expected, sut.CalculcateTotal(purchase));
         }
+        [Fact]
+        public void Discount()
+        {
+
+            var expected = 3f;
+            var sut = new PriceCalculator();
+            Assert.Equal(expected, sut.ApplyDiscount(4, 0.25f));
+        }
     }
 }
