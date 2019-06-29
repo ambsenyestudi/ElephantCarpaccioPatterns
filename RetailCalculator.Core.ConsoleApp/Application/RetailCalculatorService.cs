@@ -1,4 +1,6 @@
-﻿using RetailCalculator.Domain.Calculation;
+﻿using System;
+using System.Collections.Generic;
+using RetailCalculator.Domain.Calculation;
 using RetailCalculator.Domain.Taxing;
 
 namespace RetailCalculator.Core.ConsoleApp.Application
@@ -24,6 +26,12 @@ namespace RetailCalculator.Core.ConsoleApp.Application
             }
             return total;
         }
+
+        public IEnumerable<string> GetTaxStates()
+        {
+            return TaxCalculator.GetTaxStates();
+        }
+
         public float FigureDiscount(float price) => DiscountCalculator.FigureDiscount(price);
         public float GetTaxCharge(string state) => TaxCalculator.Taxes[state];
     }

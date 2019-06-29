@@ -17,9 +17,9 @@ namespace RetailCalculator.Core.ConsoleApp
             purchase.Count = (int)inputManager.GetItemCount();
 
 
-            Console.WriteLine("Insert state");
 
-            var state = Console.ReadLine();
+
+            var state = inputManager.GetState(calculator.GetTaxStates());
             Console.WriteLine($"Taxes for state {state} are {calculator.GetTaxCharge(state).ToTaxPercentage()}");
             var partial = calculator.CalculateTotal(purchase, state);
             Console.WriteLine($"Total: {partial}");

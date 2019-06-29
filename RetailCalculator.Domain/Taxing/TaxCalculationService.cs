@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace RetailCalculator.Domain.Taxing
 {
@@ -13,5 +14,7 @@ namespace RetailCalculator.Domain.Taxing
         {
             return price * (1 + Taxes[state]);
         }
+
+        public IEnumerable<string> GetTaxStates() => Taxes.Keys;
     }
 }
