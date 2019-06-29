@@ -21,7 +21,7 @@ namespace RetailCalculator.Core.ConsoleApp
         }
         public float CalculcateTotal()
         {
-            return Price;
+            return Price * (1f+Tax);
         }
     }
 }
