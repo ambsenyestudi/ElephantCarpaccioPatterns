@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\RetailCalculator.Core.ConsoleApp\RetailCalculator.Core.ConsoleApp.csproj" />
+    <ProjectReference Include="..\RetailCalculator.Domain\RetailCalculator.Domain.csproj" />
   </ItemGroup>
 
 </Project>

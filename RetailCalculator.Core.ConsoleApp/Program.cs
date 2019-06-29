@@ -1,5 +1,6 @@
-﻿using System;
-using System.Linq;
+﻿using RetailCalculator.Core.ConsoleApp.Application;
+using RetailCalculator.Domain.Calculation;
+using System;
 
 namespace RetailCalculator.Core.ConsoleApp
 {
@@ -7,22 +8,23 @@ namespace RetailCalculator.Core.ConsoleApp
     {
         static void Main(string[] args)
         {
-            var calculator = new Calculator();
+            var calculator = ServiceLocator.RetailCalculatorService;
             Console.WriteLine("Welcome to retail calculator");
 
+            var purchase = new PurchaseEntity();
             Console.WriteLine("Insert item price");
-            calculator.Price = float.Parse(Console.ReadLine());
-            Console.WriteLine($"Item price {calculator.Price}");
+            purchase.Price = float.Parse(Console.ReadLine());
+            Console.WriteLine($"Item price {purchase.Price}");
 
             Console.WriteLine("Insert item count");
-            calculator.Count = int.Parse(Console.ReadLine());
-            Console.WriteLine($"Item count {calculator.Count}");
+            purchase.Count = int.Parse(Console.ReadLine());
+            Console.WriteLine($"Item count {purchase.Count}");
 
 
+            Console.WriteLine("Insert state");
             var state = Console.ReadLine();
-            Console.WriteLine($"Taxes for state {state}");
-            Console.WriteLine($"Tax is {calculator.BeatyfyTax(calculator.Tax)}");
-            Console.WriteLine($"Total: {calculator.CalculcateTotal()}");
+            Console.WriteLine($"Taxes for state {state} are {calculator.GetTaxCharge(state).ToTaxPercentage()}");
+            Console.WriteLine($"Total: {calculator.CalculateTotal(purchase, state)}");
             Console.ReadLine();
         }
     }
