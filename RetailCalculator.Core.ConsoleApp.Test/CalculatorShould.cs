@@ -17,5 +17,11 @@ namespace RetailCalculator.Core.ConsoleApp.Test
             var sut = new Calculator();
             Assert.True(sut.CalculcateTotal() > 0);
         }
+        [Fact]
+        public void HaveATaxTotal()
+        {
+            var sut = new Calculator();
+            Assert.True(sut.Tax > 0);
+        }
     }
 }

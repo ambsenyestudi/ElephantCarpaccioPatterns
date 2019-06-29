@@ -6,13 +6,20 @@ namespace RetailCalculator.Core.ConsoleApp
 {
     public class Calculator
     {
-        public int Price { get; set; }
+        public float Price { get; set; }
+        public float Tax { get; set; }
+
         public Calculator()
         {
             Price = 1;
+            Tax = 0.04f;
         }
-
-        public int CalculcateTotal()
+        public string BeatyfyTax(float tax)
+        {
+            var taxPercent = tax * 100;
+            return $"{taxPercent} %";
+        }
+        public float CalculcateTotal()
         {
             return Price;
         }
