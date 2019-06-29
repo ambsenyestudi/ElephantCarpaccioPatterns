@@ -11,5 +11,10 @@ namespace RetailCalculator.Core.ConsoleApp
         {
             Price = 1;
         }
+
+        public int CalculcateTotal()
+        {
+            return Price;
+        }
     }
 }
