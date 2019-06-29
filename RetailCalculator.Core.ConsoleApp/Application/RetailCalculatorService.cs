@@ -1,31 +1,30 @@
 ﻿using RetailCalculator.Domain.Calculation;
 using RetailCalculator.Domain.Taxing;
-using System;
 
 namespace RetailCalculator.Core.ConsoleApp.Application
 {
     public class RetailCalculatorService
     {
-        public PriceCalculator Calculator { get; set; }
-        public TaxCalculationService TaxCalculationService { get; set; }
+        public PriceCalculationService Calculator { get; set; }
+        public DiscountCalculationService DiscountCalculator { get; set; }
+        public TaxCalculationService TaxCalculator { get; set; }
 
         public string BeatyfyTax(float tax)
         {
             var taxPercent = tax * 100;
             return $"{taxPercent} %";
         }
-        public float CalculateTotal(PurchaseEntity purchase, string state)
+        public float CalculateTotal(PurchaseEntity purchase, string state, bool applyDiscount = false)
         {
             var partial = Calculator.CalculcateTotal(purchase);
-            return TaxCalculationService.CalculateTaxes(partial, state);
+            var total = TaxCalculator.CalculateTaxes(partial, state);
+            if (applyDiscount)
+            {
+                total = DiscountCalculator.ApplyDescount(total);
+            }
+            return total;
         }
-        public float CalculateTotal(PurchaseEntity purchase, string state, float discount)
-        {
-            var partial = Calculator.CalculcateTotal(purchase);
-            partial = TaxCalculationService.CalculateTaxes(partial, state);
-            return Calculator.ApplyDiscount(partial, discount);
-        }
-
-        public float GetTaxCharge(string state) => TaxCalculationService.Taxes[state];
+        public float FigureDiscount(float price) => DiscountCalculator.FigureDiscount(price);
+        public float GetTaxCharge(string state) => TaxCalculator.Taxes[state];
     }
 }

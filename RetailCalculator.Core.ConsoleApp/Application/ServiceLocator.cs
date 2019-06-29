@@ -33,10 +33,19 @@ namespace RetailCalculator.Core.ConsoleApp.Application
                 }
             };
             var taxCalculationService = new TaxCalculationService(taxOptions);
+            var discountCalculaton = new DiscountCalculationService(new List<DiscountRange>
+            {
+                new DiscountRange {Amount = 1000f, Discount =0.03f},
+                new DiscountRange {Amount = 5000f, Discount =0.05f},
+                new DiscountRange {Amount = 7000f, Discount =0.07f},
+                new DiscountRange {Amount = 10000f, Discount =0.10f},
+                new DiscountRange {Amount = 50000f, Discount =0.15f}
+            });
             return new RetailCalculatorService
             {
-                Calculator = new PriceCalculator(),
-                TaxCalculationService = taxCalculationService
+                Calculator = new PriceCalculationService(),
+                DiscountCalculator = discountCalculaton,
+                TaxCalculator = taxCalculationService
             };
             
         }

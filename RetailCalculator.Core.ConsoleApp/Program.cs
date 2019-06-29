@@ -22,12 +22,15 @@ namespace RetailCalculator.Core.ConsoleApp
 
 
             Console.WriteLine("Insert state");
+
             var state = Console.ReadLine();
             Console.WriteLine($"Taxes for state {state} are {calculator.GetTaxCharge(state).ToTaxPercentage()}");
-            Console.WriteLine($"Total: {calculator.CalculateTotal(purchase, state)}");
-            var discount = 0.03f;
-            Console.WriteLine($"Applying a dicount of {discount.ToTaxPercentage()}");
-            Console.WriteLine($"Total: {calculator.CalculateTotal(purchase, state, discount)}");
+            var partial = calculator.CalculateTotal(purchase, state);
+            Console.WriteLine($"Total: {partial}");
+
+            var discount = calculator.FigureDiscount(partial);
+            Console.WriteLine($"Applying a discount of {discount.ToTaxPercentage()}");
+            Console.WriteLine($"Total: {calculator.CalculateTotal(purchase, state, true)}");
             Console.ReadLine();
         }
     }
