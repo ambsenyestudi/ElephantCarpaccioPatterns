@@ -6,7 +6,9 @@ namespace RetailCalculator.Core.ConsoleApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Welcome to retail calculator");
+            //So you can see the app
+            Console.ReadLine();
         }
     }
 }
