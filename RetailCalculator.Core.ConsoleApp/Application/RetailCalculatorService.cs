@@ -1,7 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using RetailCalculator.Domain.Calculation;
+﻿using RetailCalculator.Domain.Calculation;
 using RetailCalculator.Domain.Taxing;
+using System.Collections.Generic;
 
 namespace RetailCalculator.Core.ConsoleApp.Application
 {
@@ -10,7 +9,19 @@ namespace RetailCalculator.Core.ConsoleApp.Application
         public PriceCalculationService Calculator { get; set; }
         public DiscountCalculationService DiscountCalculator { get; set; }
         public TaxCalculationService TaxCalculator { get; set; }
+        public RetailCalculatorService()
+        {
 
+        }
+        public RetailCalculatorService(
+            PriceCalculationService calculator, 
+            DiscountCalculationService discountCalculator, 
+            TaxCalculationService taxCalculator)
+        {
+            Calculator = calculator;
+            DiscountCalculator = discountCalculator;
+            TaxCalculator = taxCalculator;
+        }
         public string BeatyfyTax(float tax)
         {
             var taxPercent = tax * 100;

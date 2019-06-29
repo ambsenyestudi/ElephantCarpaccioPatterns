@@ -1,5 +1,7 @@
 ﻿using RetailCalculator.Core.ConsoleApp.Application;
+using RetailCalculator.Core.ConsoleApp.Composition;
 using RetailCalculator.Domain.Calculation;
+using RetailCalculator.Domain.Taxing;
 using System;
 
 namespace RetailCalculator.Core.ConsoleApp
@@ -8,8 +10,16 @@ namespace RetailCalculator.Core.ConsoleApp
     {
         static void Main(string[] args)
         {
-            var calculator = ServiceLocator.RetailCalculatorService;
-            var inputManager = new InputManager();
+            var inputManager = Compositor.Resolve<InputManager>(typeof(InputManager));
+
+            var dependencies = new Type[]
+            {
+                typeof(PriceCalculationService),
+                typeof(DiscountCalculationService),
+                typeof(TaxCalculationService),
+            };
+
+            var calculator = Compositor.Resolve<RetailCalculatorService>(typeof(RetailCalculatorService), dependencies);
             Console.WriteLine("Welcome to retail calculator");
 
             var purchase = new PurchaseEntity();
