@@ -8,6 +8,7 @@ namespace RetailCalculator.Core.ConsoleApp
     {
         public float Price { get; set; }
         public float Tax { get; set; }
+        public int Count { get; set; }
 
         public Calculator()
         {
@@ -21,7 +22,7 @@ namespace RetailCalculator.Core.ConsoleApp
         }
         public float CalculcateTotal()
         {
-            return Price * (1f+Tax);
+            return Price * Count *(1f+Tax);
         }
     }
 }
