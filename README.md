@@ -57,7 +57,7 @@ While we are at it we'll try to move to configuration files the taxing an discou
 We delivered (01-AntiPattern) on time so now our client is happy because he sees value in configuration files.
 He wants to go to the next level and has heard of this Microservice thing. 
 Since his development team has some experience using Asp.net MVC he is confident that they will have no problem with a Web Api 2 application.
-Since simple IOC(MVVMLight lib) has quickly embraced  by his development team, now his heard of Unity IOC and wants it in the new project
+Since simple IOC(MVVMLight lib) has quickly embraced by his development team, now his heard of Unity IOC and wants it in the new project
 
 ### Patterns ilustration
 
