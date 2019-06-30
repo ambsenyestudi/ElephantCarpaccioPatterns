@@ -51,6 +51,7 @@ From what we gathered our client's development does:
 
 After a nice retrospective at our offices we realized that there is a framework that can solve all our problems.
 **Simple IOC (MVVMLight lib)** has a kind of service locator flavor and uses DI. So let's meet out client's need and deliver some value.
+While we are at it we'll try to move to configuration files the taxing an discount lists
 
 ### Patterns ilustration
 
@@ -59,3 +60,4 @@ To explain some patterns int this project I've implemented the following pattern
 	- [Service Locator Pattern](SERVICELOCATOR.md)
 	- [Poor man's DI](POORMANSDI.md)
 - 01-AntiPattern
+	- [Antipatter](ANTIPATTER.md)
