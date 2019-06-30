@@ -3,16 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2015
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RetailCalculator.Core.ConsoleApp", "RetailCalculator.Core.ConsoleApp\RetailCalculator.Core.ConsoleApp.csproj", "{ABD2EE84-3354-4C3C-A5BF-9D4CAC3FD80C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RetailCalculator.Core.ConsoleApp", "RetailCalculator.Core.ConsoleApp\RetailCalculator.Core.ConsoleApp.csproj", "{ABD2EE84-3354-4C3C-A5BF-9D4CAC3FD80C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F9D0FC6F-25B8-4FFF-ACD3-D72421C147FA}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
+		SERVICELOCATOR.md = SERVICELOCATOR.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RetailCalculator.Core.ConsoleApp.Test", "RetailCalculator.Core.ConsoleApp.Test\RetailCalculator.Core.ConsoleApp.Test.csproj", "{2B684355-A710-48F5-BBBF-8E9B36E122B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RetailCalculator.Core.ConsoleApp.Test", "RetailCalculator.Core.ConsoleApp.Test\RetailCalculator.Core.ConsoleApp.Test.csproj", "{2B684355-A710-48F5-BBBF-8E9B36E122B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RetailCalculator.Domain", "RetailCalculator.Domain\RetailCalculator.Domain.csproj", "{DEB256C8-349B-4599-BDD5-E31A2FC20D06}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RetailCalculator.Domain", "RetailCalculator.Domain\RetailCalculator.Domain.csproj", "{DEB256C8-349B-4599-BDD5-E31A2FC20D06}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
