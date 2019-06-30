@@ -9,7 +9,7 @@ was the **Service Locator Pattern**
 #### How I learned the Service Locator pattern
 **Service Locator** Is simply a singleton that has your software Dependencies as properties.
 
-csharp
+```csharp
 public static class ServiceLocator
 {
 	private static RetailCalculatorService retailCalculatorService;
@@ -25,6 +25,6 @@ public static class ServiceLocator
 		}
     }
 }
-
+```
 This particular instance of code would be called as ServiceLocator.RetailCalculatorService in order to get the instance of our class
 (**Word of advice** this was kept simple for teaching purposes but It would work much better if you did lazy instantiation memory wise)

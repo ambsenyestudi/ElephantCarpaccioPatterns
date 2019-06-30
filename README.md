@@ -6,7 +6,7 @@ I really love the elephant carpaccio kata
 Instructions can be found here:
 https://docs.google.com/document/d/1TCuuu-8Mm14oxsOnlk8DqfZAA1cvtYu9WGv67Yj_sSk/pub
 
-###This is my carpaccio user stories for the elephant carpaccio kata
+### This is my carpaccio user stories for the elephant carpaccio kata
 
 - As a user I want an app
 - As a user I want to haver a price for my items

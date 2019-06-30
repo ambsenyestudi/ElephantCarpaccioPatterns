@@ -8,6 +8,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F9D0FC6F-25B8-4FFF-ACD3-D72421C147FA}"
 	ProjectSection(SolutionItems) = preProject
 		DI.md = DI.md
+		POORMANSDI.md = POORMANSDI.md
 		README.md = README.md
 		SERVICELOCATOR.md = SERVICELOCATOR.md
 	EndProjectSection
