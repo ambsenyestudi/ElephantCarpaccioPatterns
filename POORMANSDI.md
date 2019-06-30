@@ -8,7 +8,7 @@ The ones I've used through my carrier are:
 - Unity IOC
 - Built In dotnet core Injection Framework
 
-But my first contact with Dependency Injection was through a Framework called Simple IOC, though some say it is an antipattern for me was the easiest to figure out.
+But my first contact with Dependency Injection was through a Framework called Simple IOC (MVVMLight lib), though some say it is an antipattern for me was the easiest to figure out.
 
 ### No magic only composition an reflection
 The first reaction of *noob* when told about Inversion of Control is that they can't wrap their head 

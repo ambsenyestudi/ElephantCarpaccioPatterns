@@ -50,7 +50,7 @@ From what we gathered our client's development does:
 - Could be resistent to embrace that DI thing they are being forced upon
 
 After a nice retrospective at our offices we realized that there is a framework that can solve all our problems.
-**Simple IOC** has a kind of service locator flavor and uses DI. So let's meet out client's need and deliver some value.
+**Simple IOC (MVVMLight lib)** has a kind of service locator flavor and uses DI. So let's meet out client's need and deliver some value.
 
 ### Patterns ilustration
 

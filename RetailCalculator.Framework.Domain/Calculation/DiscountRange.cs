@@ -1,4 +1,4 @@
-﻿namespace RetailCalculator.Domain.Calculation
+﻿namespace RetailCalculator.Framework.Domain.Calculation
 {
     public class DiscountRange
     {
