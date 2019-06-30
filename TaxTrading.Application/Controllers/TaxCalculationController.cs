@@ -14,7 +14,7 @@ namespace TaxTrading.Application.Controllers
         }
         public IHttpActionResult Post([FromBody]TaxCalculationViewModel model)
         {
-            var result = taxCalculationService.CalculateTaxes(model.Price, model.State);
+            var result = taxCalculationService.CalculateTaxes(model.Price, model.State.ToUpper());
             return Ok(new TaxCalculationResponse { Result = result});
         }
     }
