@@ -1,5 +1,5 @@
-#DI
-##Never liked short names and miss leading conceptions
+# DI
+## Never liked short names and miss leading conceptions
 DI is buzzword that people through around happily usually referring to **Dependency Injection** but I'd say that in order of precedence as I was trained, we would apply:
 
 - Good practices
