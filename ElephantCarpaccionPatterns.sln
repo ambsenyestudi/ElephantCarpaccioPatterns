@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RetailCalculator.Core.Conso
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RetailCalculator.Domain", "RetailCalculator.Domain\RetailCalculator.Domain.csproj", "{DEB256C8-349B-4599-BDD5-E31A2FC20D06}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00-NoDI", "00-NoDI", "{159DE33F-D796-4B32-BA82-007670217647}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,6 +40,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{ABD2EE84-3354-4C3C-A5BF-9D4CAC3FD80C} = {159DE33F-D796-4B32-BA82-007670217647}
+		{2B684355-A710-48F5-BBBF-8E9B36E122B4} = {159DE33F-D796-4B32-BA82-007670217647}
+		{DEB256C8-349B-4599-BDD5-E31A2FC20D06} = {159DE33F-D796-4B32-BA82-007670217647}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {266CA12F-22EC-43B7-87A6-7750D29E01FA}
