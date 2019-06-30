@@ -28,21 +28,21 @@ https://docs.google.com/document/d/1TCuuu-8Mm14oxsOnlk8DqfZAA1cvtYu9WGv67Yj_sSk/
 - As a user I want to validate state input
 - As a user I want to warning when bad state input
 
-### For the sake of the story let's say:
+## For the sake of the story let's say:
 We are aproached by a client from whom we gather the preceding stories.
 We really want to go CD, but our client is kind of old fashion.
 
-#### The first 20 Deliveries (00-NoDI app was delivered)
+### The first 20 Deliveries (00-NoDI app was delivered)
 We went all in and we came out with an application that meets our client's criteria.
 We delivered many times a day and talked frequently to our client. Our client kind of stalls and responds 
 vagelly to our question. After 20 delvieries he realizes that our aproach doesn't fit his companies needs.
 
-##### The old fashion down grade
+#### The old fashion down grade
 Our client's developer team doesn't know dotnet core so he asks us to change our development to C# plain old framework. 
 Furthermore, he wants to use this new thing called DI his heard about, because that service locator thing his developer use
 is doomed or so he read at some blog.
 
-##### Continuous improvement
+#### Continuous improvement
 From what we gathered our client's development does:
 - Develop C# Framework apps
 - Don't plan to learn dotnet core any time soon
@@ -52,6 +52,12 @@ From what we gathered our client's development does:
 After a nice retrospective at our offices we realized that there is a framework that can solve all our problems.
 **Simple IOC (MVVMLight lib)** has a kind of service locator flavor and uses DI. So let's meet out client's need and deliver some value.
 While we are at it we'll try to move to configuration files the taxing an discount lists
+
+### Microservices on WebApi2
+We delivered (01-AntiPattern) on time so now our client is happy because he sees value in configuration files.
+He wants to go to the next level and has heard of this Microservice thing. 
+Since his development team has some experience using Asp.net MVC he is confident that they will have no problem with a Web Api 2 application.
+Since simple IOC(MVVMLight lib) has quickly embraced  by his development team, now his heard of Unity IOC and wants it in the new project
 
 ### Patterns ilustration
 
