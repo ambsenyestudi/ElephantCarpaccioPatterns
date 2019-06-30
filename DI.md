@@ -1,12 +1,12 @@
 # DI
 
 ## Never liked short names and miss leading conceptions
-**DI** is buzzword that people through around happily usually referring to **Dependency Injection**. 
+**DI** is buzzword that people throw around happily usually referring to **Dependency Injection**. 
 
-### Good practies why
-Everybody say that good practices are the best but when there is time to apply them. I **strongly** desagree
+### Good practices why?
+Everybody say that good practices are the best but when there is time to apply them. I **strongly** disagree.
 
-I'd say that in order of precedence based on how I was trained, we would be:
+I'd say that in order of precedence based on how I was trained, they would be:
 
 - Good practices
 	- KISS (Keep it simple *sweetheart*)
@@ -16,7 +16,7 @@ I'd say that in order of precedence based on how I was trained, we would be:
 		- Open/Close Principle
 		- Liscov Substitution Principle
 		- Interface Segregation Principle
-		- Dependency Inversion 
+		- Dependency Inversion Principle
 - PATTERNS
 	- Service Locator
 	- Poor man DI
@@ -25,6 +25,5 @@ I'd say that in order of precedence based on how I was trained, we would be:
 	- IOC
 
 #### Dependency Injection vs Dependency Inversion and IOC
-In all my years of carrear I've never found a person that could explain me de difference between Dependency Injeciton vs Dependency Inversion further
+In all my years of career I've never found a person that could explain me de difference between Dependency Injection vs Dependency Inversion further
 than saying that *Dependency Inversion* is the **concept** and *Dependency Inversion* is the ***way of applying the concept***.
- 
